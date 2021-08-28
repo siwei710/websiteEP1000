@@ -36,6 +36,15 @@
         <p></p>
         <p><img src="tinkercad.PNG" border="3"</p>
         <p>C++ code for 3 LED with push button</p>
+        <p>For line 3-7, each LED and push button was assign to a pin and variables were declared.</p>
+        <p>Next up is the void setup, let me first explain what PinMode() function does. It is used to configure a specific pin to behave either as an input or an output.
+        Hence here the LEDs will be the ouput(the display), push button as the input.</p>
+        <p>Lastly is the void loop where the code inside the loop function runs over and over as long as the Arduino board is turned on.
+        For the code is the void loop, when the push button is not pressed yet(btnst==LOW). "IF" the push button is pressed(btnst==HIGH)
+        the red LED will light up(digitalWrite(Rled, HIGH)) first for 0.5s(delay(500)) then it will be off(digitalWrite(Rled, LOW)). 
+        Next the yellow LED will light up(digitalWrite(Yled, HIGH)) first for 0.5s(delay(500)) then it will be off(digitalWrite(Yled, LOW)).
+        Lastly, the green LED will light up(digitalWrite(Gled, HIGH)) first for 0.5s(delay(500)) then it will be off(digitalWrite(Gled, LOW)).
+        "ELSE" if the push button is not pressed none of the LEDs will light up. Therefore (digitalWrite(Rled, LOW)),(digitalWrite(Yled, LOW)),(digitalWrite(Gled, LOW)).</p>
     </div>
 
     <div class="footer">
